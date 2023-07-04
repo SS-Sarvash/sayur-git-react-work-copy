@@ -6,9 +6,10 @@ export const DebugInfinite = () => {
     const [value, setValue] = useState('')
     const [count, setCount] = useState(-1)
 
-    useEffect(() => setCount(count + 1));
+    // useEffect(() => setCount(count + 1));
     const onChange = event =>{
         setValue(event.target.value)
+        setCount(count + 1)
     }
 
   return (
